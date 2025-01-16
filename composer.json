@@ -1,0 +1,29 @@
+{
+    "name": "chokqu/trendyol-php-client",
+    "description": "Chokqu markası altında Trendyol API ile etkileşim kurmak için PHP/Laravel paketi.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tuğrul Yıldırım",
+            "email": "iletisim@tugrulyildirim.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chokqu\\Trendyol\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chokqu\\Trendyol\\Providers\\ChokquTrendyolServiceProvider"
+            ]
+        }
+    }
+}
